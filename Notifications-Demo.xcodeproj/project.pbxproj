@@ -13,7 +13,36 @@
 		F240B66B1F3CADB4004FFE6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F240B66A1F3CADB4004FFE6D /* Assets.xcassets */; };
 		F240B66E1F3CADB4004FFE6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F240B66C1F3CADB4004FFE6D /* LaunchScreen.storyboard */; };
 		F240B6761F3CBB32004FFE6D /* brutus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F240B6751F3CBB32004FFE6D /* brutus.jpg */; };
+		F240B67E1F3CD582004FFE6D /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F240B67D1F3CD582004FFE6D /* UserNotifications.framework */; };
+		F240B6801F3CD582004FFE6D /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F240B67F1F3CD582004FFE6D /* UserNotificationsUI.framework */; };
+		F240B6831F3CD582004FFE6D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F240B6821F3CD582004FFE6D /* NotificationViewController.swift */; };
+		F240B6861F3CD582004FFE6D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F240B6841F3CD582004FFE6D /* MainInterface.storyboard */; };
+		F240B68A1F3CD582004FFE6D /* myContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F240B67B1F3CD582004FFE6D /* myContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F240B6881F3CD582004FFE6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F240B6581F3CADB4004FFE6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F240B67A1F3CD582004FFE6D;
+			remoteInfo = myContentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F240B68E1F3CD582004FFE6D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F240B68A1F3CD582004FFE6D /* myContentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F240B6601F3CADB4004FFE6D /* Notifications-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notifications-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +53,12 @@
 		F240B66D1F3CADB4004FFE6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F240B66F1F3CADB4004FFE6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F240B6751F3CBB32004FFE6D /* brutus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brutus.jpg; sourceTree = "<group>"; };
+		F240B67B1F3CD582004FFE6D /* myContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = myContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F240B67D1F3CD582004FFE6D /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		F240B67F1F3CD582004FFE6D /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		F240B6821F3CD582004FFE6D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		F240B6851F3CD582004FFE6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F240B6871F3CD582004FFE6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +69,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F240B6781F3CD582004FFE6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F240B6801F3CD582004FFE6D /* UserNotificationsUI.framework in Frameworks */,
+				F240B67E1F3CD582004FFE6D /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				F240B6621F3CADB4004FFE6D /* Notifications-Demo */,
+				F240B6811F3CD582004FFE6D /* myContentExtension */,
+				F240B67C1F3CD582004FFE6D /* Frameworks */,
 				F240B6611F3CADB4004FFE6D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				F240B6601F3CADB4004FFE6D /* Notifications-Demo.app */,
+				F240B67B1F3CD582004FFE6D /* myContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +114,25 @@
 			path = "Notifications-Demo";
 			sourceTree = "<group>";
 		};
+		F240B67C1F3CD582004FFE6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F240B67D1F3CD582004FFE6D /* UserNotifications.framework */,
+				F240B67F1F3CD582004FFE6D /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F240B6811F3CD582004FFE6D /* myContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F240B6821F3CD582004FFE6D /* NotificationViewController.swift */,
+				F240B6841F3CD582004FFE6D /* MainInterface.storyboard */,
+				F240B6871F3CD582004FFE6D /* Info.plist */,
+			);
+			path = myContentExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +143,34 @@
 				F240B65C1F3CADB4004FFE6D /* Sources */,
 				F240B65D1F3CADB4004FFE6D /* Frameworks */,
 				F240B65E1F3CADB4004FFE6D /* Resources */,
+				F240B68E1F3CD582004FFE6D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F240B6891F3CD582004FFE6D /* PBXTargetDependency */,
 			);
 			name = "Notifications-Demo";
 			productName = "Notifications-Demo";
 			productReference = F240B6601F3CADB4004FFE6D /* Notifications-Demo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F240B67A1F3CD582004FFE6D /* myContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F240B68B1F3CD582004FFE6D /* Build configuration list for PBXNativeTarget "myContentExtension" */;
+			buildPhases = (
+				F240B6771F3CD582004FFE6D /* Sources */,
+				F240B6781F3CD582004FFE6D /* Frameworks */,
+				F240B6791F3CD582004FFE6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myContentExtension;
+			productName = myContentExtension;
+			productReference = F240B67B1F3CD582004FFE6D /* myContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +183,11 @@
 				ORGANIZATIONNAME = L3;
 				TargetAttributes = {
 					F240B65F1F3CADB4004FFE6D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Q7J62NFPN5;
+						ProvisioningStyle = Automatic;
+					};
+					F240B67A1F3CD582004FFE6D = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = Q7J62NFPN5;
 						ProvisioningStyle = Automatic;
@@ -118,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				F240B65F1F3CADB4004FFE6D /* Notifications-Demo */,
+				F240B67A1F3CD582004FFE6D /* myContentExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -134,6 +225,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F240B6791F3CD582004FFE6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F240B6861F3CD582004FFE6D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,7 +245,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F240B6771F3CD582004FFE6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F240B6831F3CD582004FFE6D /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F240B6891F3CD582004FFE6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F240B67A1F3CD582004FFE6D /* myContentExtension */;
+			targetProxy = F240B6881F3CD582004FFE6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F240B6671F3CADB4004FFE6D /* Main.storyboard */ = {
@@ -163,6 +278,14 @@
 				F240B66D1F3CADB4004FFE6D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F240B6841F3CD582004FFE6D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F240B6851F3CD582004FFE6D /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -266,6 +389,7 @@
 		F240B6731F3CADB4004FFE6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q7J62NFPN5;
 				INFOPLIST_FILE = "Notifications-Demo/Info.plist";
@@ -279,12 +403,39 @@
 		F240B6741F3CADB4004FFE6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q7J62NFPN5;
 				INFOPLIST_FILE = "Notifications-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.l3.jlev.Notifications-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F240B68C1F3CD582004FFE6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Q7J62NFPN5;
+				INFOPLIST_FILE = myContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.l3.jlev.Notifications-Demo.myContentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F240B68D1F3CD582004FFE6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Q7J62NFPN5;
+				INFOPLIST_FILE = myContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.l3.jlev.Notifications-Demo.myContentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -306,6 +457,14 @@
 			buildConfigurations = (
 				F240B6731F3CADB4004FFE6D /* Debug */,
 				F240B6741F3CADB4004FFE6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F240B68B1F3CD582004FFE6D /* Build configuration list for PBXNativeTarget "myContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F240B68C1F3CD582004FFE6D /* Debug */,
+				F240B68D1F3CD582004FFE6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

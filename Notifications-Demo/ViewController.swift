@@ -54,6 +54,9 @@ class ViewController: UIViewController {
         // Notification Content
         let notif = UNMutableNotificationContent()
         
+        // We need this only for when we are using our own extension with custom interface
+        notif.categoryIdentifier = "myNotificationCategory"
+        
         notif.title = "New Notification"
         notif.subtitle = "These are great notifications!"
         notif.body = "The new notification options in iOS 10 are pretty cool"
